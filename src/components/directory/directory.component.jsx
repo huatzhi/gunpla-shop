@@ -55,7 +55,6 @@ class Directory extends React.Component {
 
 
   render() {
-    let sect = this.state.sections;
     return (
       <div className="directory-menu">
         {
