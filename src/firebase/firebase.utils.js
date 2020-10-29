@@ -15,9 +15,6 @@ const config = {
 
 firebase.initializeApp(config);
 
-// may want to remove
-firebase.analytics();
-
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
@@ -26,6 +23,6 @@ provider.setCustomParameters({
   prompt: 'select_account'
 });
 
-export const signInWithGoogle = () => auth.signInWithPopup();
+export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
 export default firebase;
